@@ -69,5 +69,5 @@ fn main() {
     let now = Instant::now();
     part2(&input);
     let elapsed = now.elapsed();
-    println!("part1 took: {elapsed:.2?}");
+    println!("part2 took: {elapsed:.2?}");
 }
