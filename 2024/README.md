@@ -12,7 +12,7 @@ to run the file for each day use this command with the day number:
 > for the crate to get the inputs correctly.
 
 ```bash
-cargo run --release 01
+cargo run --release D01
 ```
 
 ## Inputs structure
