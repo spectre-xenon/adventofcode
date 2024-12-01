@@ -12,10 +12,10 @@ to run the file for each day use this command with the day number:
 > for the crate to get the inputs correctly.
 
 ```bash
-cargo run --release D01
+cargo run --release --bin D01
 ```
 
 ## Inputs structure
 
-inputs is organised in the input folder as follows `inputs/{day}/{part}.txt`,
-so for the first day part 1 it's like inputs/01/1.txt.
+inputs is organised in the input folder as follows `inputs/{day}.txt`,
+so for the first day part 1 it's like inputs/01.txt.

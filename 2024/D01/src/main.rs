@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use std::fs;
 use std::time::Instant;
 
-fn part1(input: String) {
+fn part1(input: &str) {
     let mut list1: Vec<i32> = Vec::new();
     let mut list2: Vec<i32> = Vec::new();
 
@@ -28,7 +28,7 @@ fn part1(input: String) {
     println!("Total distance is: {sum}");
 }
 
-fn part2(input: String) {
+fn part2(input: &str) {
     let mut dict1: HashMap<i32, i32> = HashMap::new();
     let mut dict2: HashMap<i32, i32> = HashMap::new();
 
@@ -59,16 +59,15 @@ fn part2(input: String) {
 }
 
 fn main() {
-    let input1 = fs::read_to_string("inputs/01/1.txt").unwrap();
-    let input2 = fs::read_to_string("inputs/01/2.txt").unwrap();
+    let input = fs::read_to_string("inputs/01.txt").unwrap();
 
     let now = Instant::now();
-    part1(input1);
+    part1(&input);
     let elapsed = now.elapsed();
     println!("part1 took: {elapsed:.2?}");
 
     let now = Instant::now();
-    part2(input2);
+    part2(&input);
     let elapsed = now.elapsed();
     println!("part1 took: {elapsed:.2?}");
 }
