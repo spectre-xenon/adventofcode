@@ -1,6 +1,6 @@
 # 2024
 
-This year i decided on rust cause why not!
+This year i decided on rust cause why not! <br />
 i'll use a workspace with a crate for each day for ease of solving.
 
 ## running the code
